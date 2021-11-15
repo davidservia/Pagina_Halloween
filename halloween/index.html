@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <!-- enlazo un javascript -->
+    <script src="javascripts/halloween.js"></script>
+</head>
+<body onload="sonar('musica');">
+    <audio id="musica" preload="auto">
+        <source src="sounds/campanas.mp3"></source>
+        este navegador no puede reproducir audio nativo
+       </audio>
+    <audio id="demon">
+        <source src="sounds/michael_myers_dbd.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="musica">
+        <source src="sounds/campanas.mp3" type="audio/mpeg">
+    </audio>
+    <!-- ATENCIÓN: ESTE EJERCICIO NO ES RESPONSIVE-->
+    <div id="container">
+        <p id="p1">Scary Halloween Party</p>
+
+        <!-- efecto aparecer murciélago y sonar chirrido -->
+        <p id="p2">Do not knock on the window</p>
+        <p id="p3">First, you touch gravestone </p>
+        <p id="p4">Second, listen to the pumpkin music</p>
+        <div id="ventana" onmouseover="mostrar('murcielago');sonar('musica')"
+             onmouseout="ocultar('murcielago');pausar('musica')"></div>
+        <!-- 1- creo un div vacío -->
+        <img id="murcielago" src="./images/bats.gif">
+        <div id="tumba" onclick="mostrar('zombies');sonar('musica');">
+        <img id="zombies" src="images/zombies.gif">
+        <div id="calabaza" onclick="mostrar('witch');sonar ('demon')">
+        <img id="witch" src="images/witch.gif">
+    </div>
+</body>
+</html>

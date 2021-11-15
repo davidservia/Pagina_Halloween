@@ -1,0 +1,85 @@
+/********* hoja de estilo para la presentación de halloween  ********/
+/********* IMPORTANTE: no es responsive                      ********/
+
+@font-face {
+    font-family: halloween;
+    src: url("../fonts/NightscaryFreeTrial.ttf");
+}
+
+body {background-color:black;
+      font-family: halloween;}
+
+#container { width:1920px;/* ancho de la imagen */
+             height:1106px; /* alto de la imagen */
+             margin:auto; /* centrado de la escena */
+             background-image: url("../images/background.jpg");
+             background:cover; 
+             font-size:4em;
+             color:white;
+             position:relative;/* el container se mueve */
+             }
+
+#p1, #p2, #p3, #p4 {text-shadow:5px 5px 5px red;}
+
+#p1 {position:absolute; /* fijado dentro de su contenedor */
+     top:50px;          /* coordenada vertical */
+     left:200px;        /* coordenada horizontal */
+     }
+
+#p2 {position:absolute;
+     top:100px;
+     left:1300px;}
+
+#p3 {position:absolute;
+        top:700px;
+        left:1300px;}
+
+#p4 {position:absolute;
+            top:800px;
+            left:40px;}
+
+#ventana {position:absolute;
+          top:180px;
+          left:1150px;
+
+          width:50px;
+          height:75px;
+         /** border:1px solid white;/* luego lo quito */
+          }
+
+#murcielago{position:absolute;
+            top:130px;
+            left:1000px;
+            visibility:hidden; /* el murciélago de entrada no se ve */
+        }
+#tumba{
+          position: absolute;
+          top:645px;
+          left:1400px;
+          width:100px;
+          height:100px;
+          cursor: pointer;
+      }
+#zombies{
+          position: absolute;
+            top:045px;
+          left:10px;
+          width:100px;
+          height:100px;
+          visibility: hidden;
+}
+#calabaza{
+            position: absolute;
+            top:45px;
+            left:-1400px;
+            width:700px;
+            height:400px;
+            cursor: pointer;
+        }
+#witch{
+            position: absolute;
+            width:300px;
+            height:300px;
+            top:45px;
+            left:900px;
+            visibility: hidden;
